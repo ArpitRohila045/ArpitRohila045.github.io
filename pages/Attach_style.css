@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    font-family:cursive;
+}
+
+header {
+    background: rgb(8, 1, 87);
+    color: white;
+    padding: 20px;
+}
+
+.about img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.about h2 {
+    color: #333;
+}
+
+section {
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.attachments ul, .projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+.attachments li, .projects li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+.contact p {
+    font-size: 18px;
+}
+
+footer {
+    background: rgb(8, 1, 87);
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    top: 240px;;
+    width: 100%;
+}
+
+.review{
+    height: fit-content;
+    width: 100%;
+}
+
+.ques1, .ques2, .ques3, .ques4 {
+    text-align: left;
+    margin-left: 0;
+}
+
+hr{
+    margin-top: -1%;
+    margin-left: 0;
+}
+
+.ques{
+    width: 100%;
+    text-align: left;
+    font-family: cursive;
+}
+
+.summary{
+    font-weight: 600;
+}

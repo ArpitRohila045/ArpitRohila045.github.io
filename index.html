@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arpit Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(8, 1, 87);
+            color: #fcfcfc;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            position: fixed;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            width: 100%;
+            background-color: rgb(0, 0, 41);
+            box-shadow: 0px 3px 8px #272727;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            margin: 0 30px;
+            font-size: 15px;
+        }
+
+        nav ul li a:hover {
+            color: #9a93ff;
+            font-weight: 600;
+            transition: 300ms;
+            transform: matrix();
+            position: relative;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .text-gray {
+            color: rgb(2, 117, 194);
+            margin-left: 12%;
+        }
+
+        .left {
+            font-size: 1.7rem;
+            font-weight: 450;
+            color: #9a93ff;
+            font-weight: 300%;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin-left: 80px 0px;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            width: 40%;
+
+        }
+
+        .leftSection {
+            font-size: 2rem;
+            margin-top: 0px;
+            margin-left: 10%;
+            font-size: 40px;
+            font-weight: 200px;
+        }
+
+        .rightSection img {
+            width: 100%;
+            margin: 100px 0px;
+            margin-left: 100px;
+            inline-size: 400px;
+        }
+
+        #element {
+            font-size: 40px;
+            font-style: initial;
+        }
+
+        .secondSection {
+            margin: auto;
+            max-width: 80vw;
+            height: 80vh;
+        }
+
+        main hr {
+            border: 0;
+            background: #9a93ff;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .secondSection h1 {
+            font-weight: 400;
+            font-size: 25px;
+            margin-left: 180px;
+            color: #9a93ff;
+        }
+
+        .skills {
+            max-width: 67.87rem;
+            margin: auto;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .skill-header {
+            margin-bottom: 1rem;
+        }
+
+        .skills-wrapper img {
+            padding: 1.25rem;
+        }
+
+        .icon {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        .icon-card {
+            background-color: rgb(8, 1, 87);
+            border-radius: 11px;
+            box-shadow: 0px 1.5px 9px #000000;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .icon-card:hover {
+            background-color: #9a93ff;
+            transition: 500ms;
+            box-shadow: none;
+        }
+
+        .contact {
+            margin-top: 2.5rem;
+        }
+
+        .contact h2 {
+            text-align: center;
+            margin-bottom: var(#000000);
+        }
+
+        .contact-form-container {
+            justify-content: center;
+            max-width: 33rem;
+            max-height: 46vh;
+            margin: 45px auto;
+            padding: 0.938rem;
+            border-radius: 11px;
+            box-shadow: 0.3px 1.5px 9px #000000;
+        }
+
+        .contact-form-container label {
+            line-height: 2.5em;
+            font-weight: 400;
+            color: rgb(255, 255, 255);
+        }
+
+        .contact-form-container textarea {
+            min-height: 4rem;
+            font-size: 14px;
+        }
+
+        .input-feild {
+            width: 500px;
+            height: 25px;
+            padding-top: 5.5px;
+            padding-bottom: 5.5px;
+            padding-left: 10px;
+            border-radius: 7px;
+            border: none;
+            border: 2.5px solid #013999;
+            font-size: 0.875rem;
+        }
+
+        .input-feild::placeholder {
+            padding: 0.14rem;
+            color: #000000;
+        }
+
+        .submit-btn {
+            width: 500px;
+            padding: 5.5px;
+            margin: 10px 0;
+            background-color: rgb(8, 1, 87);
+            border: none;
+            border-radius: 11px;
+            box-shadow: 0.8px 1.2px 6px #000000;
+            font-size: 1rem;
+            transition: 600ms;
+            color: #fcfcfc;
+        }
+
+        .submit-btn:hover {
+            background-color: rgb(0, 0, 0);
+            border: 0px solid #000000;
+            cursor: pointer;
+            box-shadow: none;
+        }
+
+        #about {
+            padding: 10px 0px;
+        }
+
+        .row {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .about-col-1 {
+            flex-basis: 35%;
+        }
+
+        .about-col-1 img {
+            max-width: 100%;
+            margin: 20px 350px;
+            height: 29rem;
+            border-radius: 11px;
+            box-shadow: 0.8px 4px 8px #000000;
+        }
+
+        .about-col-2 {
+            flex-basis: 52%;
+            margin: 50px 0px;
+        }
+
+        .about-para {
+            padding: 1rem;
+            margin: 25px 0px;
+            font-size: larger;
+            font-weight: 300;
+            width: 66%;
+            background-color: rgb(8, 1, 87);
+            border-radius: 11px;
+            box-shadow: 0.8px 1.2px 6px #000000;
+        }
+
+        .about-para .name {
+            color: #175ec2;
+        }
+
+        .about-para .skills {
+            color: #175ec2;
+        }
+
+        .tab-title {
+            display: flex;
+            margin: 20px 0px 40px;
+        }
+
+        .tab-link {
+            margin-right: 30px;
+            font-size: 15px;
+            font-weight: 400;
+            cursor: pointer;
+            position: relative;
+        }
+
+        #resources {
+            padding: 10px 0px;
+            justify-content: space-between;
+        }
+
+        .row-1 {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .resources-col-2 {
+            border-radius: 11px;
+            box-shadow: 0.8px 1.2px 6px #000000;
+            padding: 20px 40px;
+            max-width: 69%;
+            font-size: large;
+            font-weight: 300;
+            margin: 10px 30px;
+        }
+
+        .resources-col-1 {
+            border-radius: 11px;
+            width: 480px;
+            box-shadow: 0.8px 1.2px 6px #000000;
+        }
+
+        .resources-col-1:hover {
+            background-color: #000000;
+            box-shadow: none;
+            transition: 300ms;
+            cursor: crosshair;
+        }
+
+        .resources-col-2:hover {
+            background-color: #000000;
+            box-shadow: none;
+            transition: 300ms;
+            cursor: text;
+        }
+
+        .text-heading {
+            align-items: center;
+            padding: 0px 0cap;
+            margin: 170px 26px;
+            font-weight: 600;
+        }
+
+        #Achivements {
+            padding: 20px 10px;
+        }
+
+        .row-2 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .row-2 .achivements-col-1 {
+            text-align: center;
+            width: 50%;
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+
+        .achivements-col-2 {
+            max-height: 500px;
+            width: 600px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .achivements-col-2 img {
+            height: 350px;
+            width: 500px;
+            border-radius: 11px;
+            box-shadow: 0.8px 4px 8px #000000;
+        }
+
+        .achivements-col-2 img:hover {
+            height: 410px;
+            width: 600px;
+            box-shadow: none;
+            transition: 200ms;
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 11px;
+
+            hr {
+                margin: 5px 470px;
+                height: 3px;
+            }
+        }
+
+        .socials {
+            padding: 20px 0px;
+            height: 100px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .socicon {
+            background-color: #fcfcfc;
+            width: 100px;
+            padding: 10px 30px;
+            box-shadow: 0.7px 3px 6px #000000;
+            margin: 30px 10px;
+            border-radius: 11px;
+        }
+
+        .socicon:hover {
+            background-color: #9a93ff;
+            width: 120px;
+            position: relative;
+            transition: 200ms;
+            box-shadow: none;
+        }
+
+        .preisce {
+            align-items: center;
+            margin: 0px 200px;
+            max-width: 70%;
+            padding: 10px 10px;
+            border-radius: 11px;
+            box-shadow: 0.5px 3px 6px #000000;
+        }
+
+        .row-3 {
+            justify-content: center;
+            align-items: center;
+            padding: 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Arpit's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="pages/Attachments.html">Attachments </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="top"></div>
+        <section class="firstSection">
+            <div class="leftSection">
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="pro1.png" alt="">
+            </div>
+
+        </section>
+        <hr>
+        <div id="About">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="user.jpeg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1>About Me</h1>
+                        <div class="Contacts">
+                            <div id="Email">
+                                <link rel="stylesheet" href="Arpitrohila07@gmail.com">Arpitrohila07@gmail.com</link>
+                            </div>
+                            <div id="Phone">
+                                <h4>+91 9119063704</h5>
+                            </div>
+                        </div>
+                        <p class="about-para">
+                            <b1>Hii there!<br></b1> My name is <b class="name">Aprit Rohila</b>.I am a Computer Science
+                            and Engineering Student in Graphic era hill University(2023-27) Specilization in Artificial
+                            Intelligence and Data Science with Strong foundataion in <b class="skills">Statistic,
+                                Machine Leraning Algorithms and tools like numpy, pandas, and Data visualization
+                                tools</b>
+                            </b>also I am proficient in <b class="skills">Data Structures ,Algorithms, programing in
+                                Java, c++, c,and python</b>
+                        </p>
+                        <div class="tab-title">
+                            <p class="tab-link">Skills</p>
+                            <p class="tab-link">Experience</p>
+                            <p class="tab-link">Education
+                            <p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="Intrduciton-video" style="text-align:center; margin: 30px 0;">
+            <div id="player"></div>
+            <h4>Introduction Video</Video></h2>
+        </div>
+
+        <section class="skills" id="skills">
+            <h2 class="skill-header">My Top Skills</h2>
+
+            <div class="skills-wrapper">
+                <div class="first-set animate__animated animate__pulse">
+                    <img src="icons8-html.svg" alt="" loading="lazy" class="icon icon-card" />
+                    <img src="icons8-css.svg" alt="" loading="lazy" class="icon icon-card" />
+                    <img src="icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
+                </div>
+                <div class="first-set animate__animated animate__pulse">
+                    <img src="icons8-java.svg" alt="" loading="lazy" class="icon icon-card" />
+                    <img src="icons8-c.svg" alt="" loading="lazy" class="icon icon-card" />
+                    <img src="icons8-python.svg" alt="" loading="lazy" class="icon icon-card" />
+                </div>
+            </div>
+        </section>
+        <hr class="heading">
+        <div class="socials">
+            <a href="https://linkedin.com/in/arpit-rohila-87b760245" target="_blank">
+                <img src="icons8-linkedin.svg" alt="Linked-in" loading="lazy" class="socicon">
+            </a>
+            <a href="https://leetcode.com/u/007Arpit/" target="_blank">
+                <img src="Leet-code1.png" alt="Leet-code" loading="lazy" class="socicon">
+            </a>
+            <a href="https://www.hackerrank.com/profile/arpitrohila527" target="_blank">
+                <img src="icons8-hackerrank.svg" alt="Hacker-Rank" loading="lazy" class="socicon">
+            </a>
+            <a href="https://github.com/ArpitRohila045" target="_blank">
+                <img src="icons8-github-64.png" alt="Git-hub" loading="lazy" class="socicon">
+            </a>
+            <a href="https://x.com/Arpit7500" target="_blank">
+                <img src="icons8-x.png" alt="Tweeter" loading="lazy" class="socicon">
+            </a>
+        </div>
+        <hr>
+        <section class="contact" id="contact">
+            <h2 class="contact-card">Get In Touch With Me</h2>
+            <div class="contact-form-container">
+                <div class="contact-form">
+                    <form action="" method="">
+                        <div class="form-control">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="sender-name" placeholder="Enter your Name"
+                                class="input-feild" required />
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="sender-email" placeholder="Enter your email id"
+                                class="input-feild" required />
+                        </div>
+                        <div class="form-control">
+                            <label for="message">Message</label>
+                            <textarea id="message" cols="60" rows="10" placeholder="Enter your message" name="Message"
+                                class="input-feild" required></textarea>
+                        </div>
+                        <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Hii , My Name is <font color = "#9a93ff"><b2>ARPIT ROHILA</b2></font><br/>I am a Data Scientist'],
+            typeSpeed: 60,
+        });
+    </script>
+    
+    <script>
+            //Load YouTube IFrame API
+            var tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+            var player;
+            function onYouTubeIframeAPIReady() {
+                player = new YT.Player('player', {
+                    height: '315',
+                    width: '560',
+                    videoId: 'yFw-PFe5DM4', // Replace with your YouTube video ID
+                    playerVars: { 'controls': 0 }
+                });
+            }
+            function playVideo() {
+                if (player) player.playVideo();
+            }
+            function pauseVideo() {
+                if (player) player.pauseVideo();
+            }
+    </script>
+    </script>
+</body>
+
+</html>
